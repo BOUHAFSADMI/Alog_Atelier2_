@@ -33,8 +33,8 @@ public class stockBissons {
 		stock.put(b, stock.get(b)-1);
 	}
 	
-	public void alimenterStock(boisson b){
-		stock.put(b, stock.get(b)+1);
+	public void alimenterStock(boisson b,int nbr){
+		stock.put(b, stock.get(b)+nbr);
 	}
 
 }
