@@ -1,30 +1,40 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class stockBissons {
 	
-	private HashMap<String, Integer> stock; 
-	
-	
-	
-	
-	public stockBissons(HashMap<String, Integer> stock) {
+	private HashMap<boisson, Integer> stock;
+	ArrayList<boisson> ListeBoissons;
+
+
+	public stockBissons(HashMap<boisson, Integer> stock, ArrayList<boisson> listeBoissons) {
+		super();
 		this.stock = stock;
+		ListeBoissons = listeBoissons;
 	}
 
-	public HashMap<String, Integer> getStock() {
+	public ArrayList<boisson> getListeBoissons() {
+		return ListeBoissons;
+	}
+
+	public void setListeBoissons(ArrayList<boisson> listeBoissons) {
+		ListeBoissons = listeBoissons;
+	}
+
+	public HashMap<boisson, Integer> getStock() {
 		return stock;
 	}
 
-	public void setStock(HashMap<String, Integer> stock) {
+	public void setStock(HashMap<boisson, Integer> stock) {
 		this.stock = stock;
 	}
 
-	private void distribuerBoisson(String boisson){
-		stock.put(boisson, stock.get(boisson)-1);
+	public void distribuerBoisson(boisson b){
+		stock.put(b, stock.get(b)-1);
 	}
 	
-	private void alimenterStock(String boisson){
-		stock.put(boisson, stock.get(boisson)+1);
+	public void alimenterStock(boisson b){
+		stock.put(b, stock.get(b)+1);
 	}
 
 }

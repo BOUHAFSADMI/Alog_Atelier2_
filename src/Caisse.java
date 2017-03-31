@@ -30,5 +30,15 @@ public class Caisse {
     public void setCaisse(int caisse) { //pour la vider on met caisse=0
         this.caisse = caisse;
     }
+
+	public ArrayList<Integer> getListeMonnaies() {
+		return ListeMonnaies;
+	}
+
+	public int getCaisse() {
+		return caisse;
+	}
+    
+    
     
 }
