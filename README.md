@@ -1,1 +1,1 @@
-# Alog_Atelier2_
+# Software Architecture Lab
